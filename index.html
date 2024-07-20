@@ -11,6 +11,8 @@
   <link rel="shortcut icon" type="x-icon" href="Media/Images/Logo.png">
   <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
   <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
@@ -36,7 +38,7 @@
 
   <!--HERO SECTION-->
   <section class="hero" id="home">
-    <div class="main-content">
+    <div class="main-content" data-aos="fade-in">
       <h4>Hi, There!</h4>
       <h1>M-<span>Techy</span></h1>
       <p>Welcome to <span>Mpoyi Tech Solutions</span> - Empowering innovation through technology! 🚀 Step into a world where technology fuels our passion. We're thrilled to have you here! Are you seeking sleek websites? you're in the right place. Join us on this exciting journey as we harness the power of tech to turn your ideas into reality. Let's build something extraordinary together!</p>
@@ -61,11 +63,11 @@
 
   <!--ABOUT SECTION-->
   <section class="about" id="about">
-    <div class="about-img">
+    <div class="about-img" data-aos="zoom-in-down">
       <img src="Media/Images/about img1.jpg">
     </div>
 
-    <div class="about-text">
+    <div class="about-text" data-aos="zoom-in-up">
       <h2>We are a Web <span>Development</span> Agency</h2>
       <div class="exp-area">
         <p class="exp">Founded: <span>30 June 2022</span></p>
@@ -78,17 +80,17 @@
 
         <p class="exp">Phone: <span>+90 81 262 4860</span></p>
       </div>
-      <a href="#" class="btn">View Projects</a>
+      <a href="#portfolio" class="btn">View Projects</a>
     </div>
   </section>
 
   <!--SERVICES SECTION-->
   <section class="services" id="services">
-    <div class="center-text">
+    <div class="center-text" data-aos="fade-down">
       <h2>Our <span>Services</span></h2>
     </div>
 
-    <div class="services-content">
+    <div class="services-content" data-aos="zoom-in-up">
       <div class="box">
         <img src="Media/Images/services-web.jpg">
         <h3>Web Development</h3>
@@ -115,11 +117,11 @@
 
   <!--PORTFOLIO SECTION-->
   <section class="portfolio" id="portfolio">
-    <div class="center-text">
+    <div class="center-text" data-aos="fade-down">
       <h2>My <span>Portfolio</span></h2>
     </div>
 
-    <div class="portfolio-content">
+    <div class="portfolio-content" data-aos="zoom-in-up">
       <div class="row">
         <img src="Media/Images/Projects/projects-weatherapp.png">
         <div class="main-row">
@@ -195,7 +197,7 @@
             <a href="https://ruddyw.github.io/Travel-ZA/" target="_blank"><i class="ri-github-fill"></i></a>
           </div>
         </div>
-        <h4>Travel Blog about South Africa</h4>
+        <h4>Real Estate website</h4>
       </div>
 
       <div class="row">
@@ -208,7 +210,59 @@
             <a href="https://ruddyw.github.io/Travel-ZA/" target="_blank"><i class="ri-github-fill"></i></a>
           </div>
         </div>
-        <h4>Travel Blog about South Africa</h4>
+        <h4>E-commerce site for clothes</h4>
+      </div>
+
+      <div class="row">
+        <img src="Media/Images/Projects/projects-travelblog.jpg">
+        <div class="main-row">
+          <div class="row-text">
+            <h5>Website Design</h5>
+          </div>
+          <div class="row-icon">
+            <a href="https://ruddyw.github.io/Travel-ZA/" target="_blank"><i class="ri-github-fill"></i></a>
+          </div>
+        </div>
+        <h4>Movie application</h4>
+      </div>
+
+      <div class="row">
+        <img src="Media/Images/Projects/projects-travelblog.jpg">
+        <div class="main-row">
+          <div class="row-text">
+            <h5>Website Design</h5>
+          </div>
+          <div class="row-icon">
+            <a href="https://ruddyw.github.io/Travel-ZA/" target="_blank"><i class="ri-github-fill"></i></a>
+          </div>
+        </div>
+        <h4>Fast food website</h4>
+      </div>
+
+      <div class="row">
+        <img src="Media/Images/Projects/projects-travelblog.jpg">
+        <div class="main-row">
+          <div class="row-text">
+            <h5>Website Design</h5>
+          </div>
+          <div class="row-icon">
+            <a href="https://ruddyw.github.io/Travel-ZA/" target="_blank"><i class="ri-github-fill"></i></a>
+          </div>
+        </div>
+        <h4>To-do list web application</h4>
+      </div>
+
+      <div class="row">
+        <img src="Media/Images/Projects/projects-travelblog.jpg">
+        <div class="main-row">
+          <div class="row-text">
+            <h5>Website Design</h5>
+          </div>
+          <div class="row-icon">
+            <a href="https://ruddyw.github.io/Travel-ZA/" target="_blank"><i class="ri-github-fill"></i></a>
+          </div>
+        </div>
+        <h4>Gym landing page</h4>
       </div>
 
     </div>
@@ -216,11 +270,11 @@
 
   <!--CONTACT SECTION-->
   <section class="contact" id="contact">
-    <div class="center-text">
+    <div class="center-text" data-aos="fade-down">
       <h2>Contact <span>Us</span></h2>
     </div>
 
-    <div class="contact-form">
+    <div class="contact-form" data-aos="zoom-in">
       <form action="send_mail.php" method="POST">
         <input type="text" placeholder="Your Name" required>
         <input type="email" placeholder="Email Address.." required>
@@ -241,6 +295,14 @@
 
   <!--SCRIPT SOURCE-->
   <script src="script.js"></script>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      offset: 300,
+      duration: 1400,
+    });
+  </script>
 </body>
 
 </html>
